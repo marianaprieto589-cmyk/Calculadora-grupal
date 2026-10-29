@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora SENA</title>
+</head>
+<body>
+    <h1>Calculadora - Suma</h1>
+    
+    <input type="number" id="num1" placeholder="Número 1">
+    <input type="number" id="num2" placeholder="Número 2">
+    <button onclick="realizarSuma()">Sumar</button>
+    
+    <h3>Resultado: <span id="resultado">0</span></h3>
+
+    <script>
+        function realizarSuma() {
+            let n1 = parseFloat(document.getElementById('num1').value) || 0;
+            let n2 = parseFloat(document.getElementById('num2').value) || 0;
+            let suma = n1 + n2;
+            document.getElementById('resultado').textContent = suma;
+        }
+    </script>
+</body>
+</html>
